@@ -12,4 +12,6 @@ RUN mkdir kcptun && \
 
 WORKDIR kcptun
 
-CMD ./kcptun-server --target "127.0.0.1:8388" --listen :5353 --crypt none --nocomp
+CMD ./kcptun-server --target "127.0.0.1:8388" --crypt none --nocomp
+
+EXPOSE 29900
