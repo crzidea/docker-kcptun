@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV VERSION=20240107
+ENV VERSION=20231012
 
 RUN mkdir kcptun && \
     cd kcptun && \
