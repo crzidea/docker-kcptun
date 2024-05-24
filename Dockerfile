@@ -12,6 +12,6 @@ RUN mkdir kcptun && \
 
 WORKDIR kcptun
 
-CMD ./kcptun-server --target "127.0.0.1:8388" --crypt none --nocomp
+CMD ./kcptun-server --target "127.0.0.1:8388" --listen :3478-3498 --tcp --crypt none --nocomp --quiet --dscp 46 --sndwnd 8192 --mode fast3 --smuxver 2 --sockbuf 16777217 --smuxbuf 16777217
 
 EXPOSE 29900
